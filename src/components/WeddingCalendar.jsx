@@ -93,7 +93,7 @@ export default function WeddingCalendar() {
                       className={classes}
                       aria-haspopup="dialog"
                       aria-expanded={sheetOpen}
-                      aria-label="13 November 2026, dinner and reception"
+                      aria-label="12 November 2026, reception of baraat"
                       onClick={() => setSheetOpen(true)}
                     >
                       <Heart
@@ -129,22 +129,22 @@ export default function WeddingCalendar() {
           </div>
         </div>
 
-        <div className="mx-auto mt-8 flex w-full max-w-md items-stretch justify-center gap-4 text-center sm:gap-6 lg:max-w-xl">
-          <div className="flex flex-1 flex-col items-center">
-            <Heart className="mark-glow fill-maroon text-maroon" size={16} aria-hidden="true" />
-            <p className="mt-2 font-display text-xs tracking-[0.18em] text-gold-deep uppercase">
-              {calendar.marks[12].caption}
-            </p>
-            <p className="font-serif text-2xl text-maroon">{calendar.marks[12].label}</p>
-          </div>
-          <div className="w-px bg-gold/40" />
-          <div className="flex flex-1 flex-col items-center">
-            <Heart className="mark-glow fill-maroon text-maroon" size={16} aria-hidden="true" />
-            <p className="mt-2 font-display text-xs tracking-[0.18em] text-gold-deep uppercase">
-              {calendar.marks[13].caption}
-            </p>
-            <p className="font-serif text-2xl text-maroon">{calendar.marks[13].label}</p>
-          </div>
+        <div className="mx-auto mt-8 flex w-full max-w-md items-stretch justify-center gap-3 text-center sm:gap-5 lg:max-w-xl">
+          {(calendar.legend ?? Object.keys(calendar.marks).map(Number)).map((day, index) => {
+            const mark = calendar.marks[day]
+            return (
+              <div key={day} className="contents">
+                {index > 0 && <div className="w-px shrink-0 bg-gold/40" />}
+                <div className="flex min-w-0 flex-1 flex-col items-center">
+                  <Heart className="mark-glow fill-maroon text-maroon" size={16} aria-hidden="true" />
+                  <p className="mt-2 font-display text-[0.65rem] tracking-[0.14em] text-gold-deep uppercase sm:text-xs sm:tracking-[0.18em]">
+                    {mark.caption}
+                  </p>
+                  <p className="font-serif text-lg leading-tight text-maroon sm:text-2xl">{mark.label}</p>
+                </div>
+              </div>
+            )
+          })}
         </div>
       </Reveal>
       <WeddingDateSheet open={sheetOpen} onClose={() => setSheetOpen(false)} />

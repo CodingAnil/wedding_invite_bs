@@ -3,7 +3,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion"
 import weddingData from "../data/weddingData"
 import { GaneshMark } from "./Ornaments"
 
-const RECEPTION = Date.parse("2026-11-13T18:15:00+05:30")
+const RECEPTION = Date.parse("2026-11-12T19:00:00+05:30")
 const SLIDE_MS = 4500
 
 function timeLeft() {
@@ -24,7 +24,7 @@ function ReceptionCountdown() {
   }, [])
 
   return (
-    <div className="flex items-center justify-center gap-3 sm:gap-4" aria-label="Time remaining until the reception on 13 November 2026">
+    <div className="flex items-center justify-center gap-3 sm:gap-4" aria-label="Time remaining until the reception of baraat on 12 November 2026">
       {[
         ["Days", left.days],
         ["Hours", left.hours],

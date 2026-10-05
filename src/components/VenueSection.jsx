@@ -21,7 +21,7 @@ export default function VenueSection() {
               href={venue.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Open Sarwarpur, Fatehabad, Haryana in Google Maps"
+              aria-label={`Open ${venue.lines.join(", ")} in Google Maps`}
               className="group relative mx-auto mt-10 block w-full max-w-md border border-gold/60 px-4 py-12 lg:max-w-xl lg:py-16"
               whileTap={reduce ? undefined : { scale: 0.985 }}
             >

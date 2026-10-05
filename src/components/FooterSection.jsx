@@ -49,7 +49,7 @@ const SPILL = [
     top: "52%",
     rotate: 12,
     size: 14,
-    color: "#f0d56a",
+    color: "#e3b52f",
   },
   {
     type: "heart",

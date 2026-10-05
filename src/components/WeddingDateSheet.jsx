@@ -127,7 +127,7 @@ export default function WeddingDateSheet({ open, onClose }) {
                 href={weddingData.venue.mapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Open Sarwarpur, Fatehabad, Haryana in Google Maps"
+                aria-label={`Open ${event.location} in Google Maps`}
                 className="mt-5 inline-flex min-h-11 items-center justify-center px-3 font-serif text-lg text-gold-deep underline decoration-gold/60 underline-offset-4"
               >
                 Open in Google Maps

@@ -9,7 +9,7 @@ const CORNER_PETALS = [
   { left: "92%", top: "9%", size: 9, color: "#c23a4e", delay: 0.3, rotate: -26 },
   { left: "5%", top: "88%", size: 11, color: "#e9899d", delay: 0.2, rotate: 16 },
   { left: "11%", top: "93%", size: 13, color: "#e3b52f", delay: 0.35, rotate: -12 },
-  { left: "88%", top: "90%", size: 10, color: "#f0d56a", delay: 0.18, rotate: 28 },
+  { left: "88%", top: "90%", size: 10, color: "#e3b52f", delay: 0.18, rotate: 28 },
   { left: "93%", top: "85%", size: 12, color: "#7a1f2b", delay: 0.28, rotate: -20 },
 ]
 

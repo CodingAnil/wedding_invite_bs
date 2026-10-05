@@ -7,7 +7,7 @@ const BURST = [
     duration: 3.1,
     size: 13,
     sway: 26,
-    color: "#f6ddd4",
+    color: "#ebc8be",
     spin: 160,
   },
   {
@@ -34,7 +34,7 @@ const BURST = [
     duration: 3.2,
     size: 8,
     sway: -22,
-    color: "#f6ddd4",
+    color: "#ebc8be",
     spin: 120,
   },
   {
@@ -76,7 +76,7 @@ const BURST = [
 ];
 
 const DRIFT = [
-  { left: "14%", delay: 0.1, size: 11, sway: 14, color: "#f6ddd4" },
+  { left: "14%", delay: 0.1, size: 11, sway: 14, color: "#ebc8be" },
   { left: "48%", delay: 0.35, size: 8, sway: -10, color: "#e3b52f" },
   { left: "78%", delay: 0.2, size: 10, sway: 12, color: "#d4a62a" },
 ];

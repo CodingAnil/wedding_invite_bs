@@ -52,6 +52,7 @@ export default function WeddingIntro() {
               relation={groomFamily.relation}
               father={groomFamily.father}
               mother={groomFamily.mother}
+              place={groomFamily.place}
             />
           </div>
         </StaggerItem>
@@ -68,7 +69,6 @@ export default function WeddingIntro() {
             relation={brideFamily.relation}
             father={brideFamily.father}
             mother={brideFamily.mother}
-            place={brideFamily.place}
           />
         </StaggerItem>
       </Stagger>
