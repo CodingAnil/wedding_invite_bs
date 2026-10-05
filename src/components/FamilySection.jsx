@@ -10,7 +10,10 @@ export default function FamilySection() {
         <Stagger>
           <StaggerItem>
             <FloralDivider className="mx-auto" />
-            <h2 className="mt-6 px-2 font-script text-[clamp(2.4rem,9vw,3.75rem)] leading-tight text-maroon">
+            <p className="mt-6 font-script text-[clamp(1.65rem,5.5vw,2.35rem)] leading-tight text-gold-deep">
+              {family.withLove}
+            </p>
+            <h2 className="mt-2 px-2 font-script text-[clamp(2.5rem,9vw,3.85rem)] leading-tight text-maroon">
               {family.title}
             </h2>
             <FloralDivider className="mx-auto mt-6" />

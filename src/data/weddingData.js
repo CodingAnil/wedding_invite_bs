@@ -140,6 +140,7 @@ const weddingData = {
     caption: "The Bride & The Groom",
   },
   family: {
+    withLove: "With love & blessings from",
     title: "All Sharma Family",
   },
   closing: {
